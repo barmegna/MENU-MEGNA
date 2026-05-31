@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Megna | Menù</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+
+        :root {
+            --espresso: #1C1008;
+            --crema: #F7F3EC;
+            --rosso: #D42B2B;
+            --caramello: #C17A2A;
+            --oro: #E8A830;
+            --border: rgba(193,122,42,0.2);
+            --border-light: rgba(193,122,42,0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'DM Sans', sans-serif; background-color: var(--crema); color: var(--espresso); line-height: 1.6; padding-bottom: 50px; }
+
+        .container { max-width: 800px; margin: 0 auto; }
+        header { background: var(--espresso); color: white; padding: 80px 20px; text-align: center; }
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 3.5rem; margin-bottom: 10px; color: white; }
+        .subtitle { font-family: 'DM Mono', monospace; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: var(--caramello); }
+
+        section { padding: 60px 20px; }
+        .bg-espresso { background-color: var(--espresso); color: var(--crema); }
+        
+        h2.section-title { font-family: 'DM Mono', monospace; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 40px; color: var(--caramello); border-bottom: 1px solid var(--caramello); display: inline-block; padding-bottom: 5px; }
+        .gold-title { color: var(--oro) !important; border-bottom: 1px solid var(--oro) !important; }
+
+        .item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light); }
+        .item-info { flex: 1; }
+        .item-name { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.3rem; margin-bottom: 2px; }
+        .item-desc { font-size: 0.9rem; opacity: 0.8; margin-top: 4px; }
+        .item-price { font-family: 'DM Mono', monospace; color: var(--caramello); margin-left: 20px; font-weight: bold; }
+
+        .footer { text-align: center; padding: 40px; font-size: 0.8rem; color: rgba(247,243,236,0.4); background: var(--espresso); }
+
+        @media print {
+            body { background: white; color: black; }
+            header, .footer { background: #333 !important; color: white !important; }
+            .bg-espresso { background: #f0f0f0 !important; color: black !important; }
+            .item-price { color: #333; }
+            .section-title { color: #333 !important; border-color: #333 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Megna.</h1>
+    <div class="subtitle">Pasticceria Artigianale · Gelateria · Bar · Cittanova RC</div>
+</header>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">Caffetteria</h2>
+        <div class="item"><div class="item-info"><div class="item-name">Caffè espresso</div></div><div class="item-price">€1.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Ginseng</div><div class="item-desc">Dolce · Amaro · Cacao · Liquirizia · Miele · Limone</div></div><div class="item-price">€1.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Orzo</div></div><div class="item-price">€1.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Cappuccino</div></div><div class="item-price">€1.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Caffè freddo</div></div><div class="item-price">€1.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Crema caffè</div><div class="item-desc">Disponibile con cioccolato</div></div><div class="item-price">€2.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Caffè shakerato</div></div><div class="item-price">€3.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Latte di mandorla</div><div class="item-desc">Variante macchiato con Caffè freddo · Crema caffè · Menta · Fragola</div></div><div class="item-price">€2.00</div></div>
+    </section>
+
+    <section class="bg-espresso">
+        <h2 class="section-title gold-title">Le Nostre Coppe</h2>
+        <div class="item"><div class="item-info"><div class="item-name">Coppa Megna</div><div class="item-desc">Dolce fantasia del Maestro Gelataio</div></div><div class="item-price">€5.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Cremosa</div><div class="item-desc">Gelato al caffè · Stracciatella · Baileys · Panna montata</div></div><div class="item-price">€5.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Serenissima</div><div class="item-desc">Zuppa Inglese · Crema al Burro · Fragola · Panna montata</div></div><div class="item-price">€5.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Nocciolosa</div><div class="item-desc">Nocciola Piemonte IGP · Granella nocciola · Pezzetti di cioccolato</div></div><div class="item-price">€5.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Pistacchio</div><div class="item-desc">Gelato al pistacchio puro · Granella di pistacchio</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Frizzante</div><div class="item-desc">Gelato al limone · Fragola · Amarena · Prosecco</div></div><div class="item-price">€6.00</div></div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Gelateria</h2>
+        <div class="item"><div class="item-info"><div class="item-name">Cono gelato</div><div class="item-desc">Solo al bancone</div></div><div class="item-price">€2.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coppetta piccola in carta</div></div><div class="item-price">€2.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coppetta media in carta</div></div><div class="item-price">€3.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coppetta grande in carta</div></div><div class="item-price">€3.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coppetta piccola in vetro</div></div><div class="item-price">€4.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coppetta media in vetro</div></div><div class="item-price">€5.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coppetta grande in vetro</div></div><div class="item-price">€7.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Granita</div><div class="item-desc">Fragola · Limone · Mandorla · Coca-cola · Blu Tropical</div></div><div class="item-price">€2.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Frappè</div></div><div class="item-price">€3.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Brioche gelato</div></div><div class="item-price">€3.50</div></div>
+        <p style="margin-top:20px; font-size:0.9rem;">Gusti: Fior di latte · Nocciola · Zuppa Inglese · Pistacchio · Cioccolato · Crema al Burro · Nutella · Caffè · Tiramisù · Cookies · Mascarpone · Smarties · Fondente · Limone · Fragola · Cocco · Pesca · Amarena · Latte di Bufala · Stracciatella · Cassata Siciliana</p>
+    </section>
+
+    <section class="bg-espresso">
+        <h2 class="section-title gold-title">Cocktail</h2>
+        <div class="item"><div class="item-info"><div class="item-name">Bellini</div><div class="item-desc">Prosecco · purea di pesca</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Rossini</div><div class="item-desc">Prosecco · sciroppo di fragole</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Negroni</div><div class="item-desc">Gin · Campari · Vermouth rosso</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Negroni Sbagliato</div><div class="item-desc">Campari · Vermouth rosso · Prosecco</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Americano</div><div class="item-desc">Campari · Vermouth rosso · Soda</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Margarita</div><div class="item-desc">Tequila · Cointreau · Lime</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Cuba Libre</div><div class="item-desc">Rum scuro · Coca-Cola</div></div><div class="item-price">€6.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Sex on the Beach</div><div class="item-desc">Vodka · Vodka alla pesca · Arancia · Mirtilli</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Tequila Sunrise</div><div class="item-desc">Tequila · Arancia · Mirtilli</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Mojito</div><div class="item-desc">Rum bianco · Menta · Lime · Zucchero di canna · Soda</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Daiquiri Fragola</div><div class="item-desc">Rum bianco · Lime · Purea di fragole</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Caipirinha</div><div class="item-desc">Cachaça · Lime · Zucchero di canna</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Caipiroska Fragola</div><div class="item-desc">Vodka alla fragola · Lime · Menta</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">London Mule</div><div class="item-desc">Gin · Lime · Ginger beer</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Long Island Iced Tea</div><div class="item-desc">Gin · Rum · Tequila · Cointreau · Vodka · Lime · Coca-Cola</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Japanase Ice Tea</div><div class="item-desc">Gin · Rum · Vodka · Midori · Lime · LemonSoda</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Pina Colada</div><div class="item-desc">Rum bianco · Cocco · Ananas</div></div><div class="item-price">€6.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Virgin Colada</div><div class="item-desc">Analcolico · Ananas · Cocco</div></div><div class="item-price">€6.00</div></div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Bevande</h2>
+        <div class="item"><div class="item-info"><div class="item-name">Succo di frutta</div><div class="item-desc">Ace · Albicocca · Ananas · Arancia rossa · Cocco · Mela verde · Melograno · Mirtillo · Pera · Pesca · Pesca e mango · Pompelmo</div></div><div class="item-price">€2.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Coca-Cola / Fanta / Sprite / Pepsi / Chinotto / Bergamotto</div></div><div class="item-price">€2.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Red Bull</div></div><div class="item-price">€2.50</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Esta-tè</div><div class="item-desc">Pesca · Limone</div></div><div class="item-price">€2.00</div></div>
+        <div class="item"><div class="item-info"><div class="item-name">Schweppes</div></div><div class="item-price">€2.00</div></div>
+    </section>
+</div>
+
+<div class="footer">
+    Megna. · Dal 1970 · Cittanova, Calabria
+</div>
+
+</body>
+</html>
